@@ -1,0 +1,3816 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C33011",
+          "message": {
+            "text": "Unchecked upper bound for enum key used as index.."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 8707,
+                  "startColumn": 29,
+                  "endLine": 8707,
+                  "endColumn": 50
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::GetKeyData",
+                  "decoratedName": "?GetKeyData@ImGui@@YAPEAUImGuiKeyData@@PEAUImGuiContext@@W4ImGuiKey@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8697,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8699,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8699,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8702,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition 'key & 63488'. 'false' branch is taken"
+                        }
+                      },
+                      "kinds": [
+                        "Branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8706,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition '0 <= key'. 'true' branch is taken\nEnum value 'key' is checked for lower bound."
+                        }
+                      },
+                      "kinds": [
+                        "Combination"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8706,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition 'key < 666'. 'false' branch is taken\nEnum value 'key' is checked for lower bound."
+                        }
+                      },
+                      "kinds": [
+                        "Combination"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8706,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8706,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition '0'. 'false' branch is taken"
+                        }
+                      },
+                      "kinds": [
+                        "Branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8706,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8706,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8707,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8707,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition 'result.IsLegacyKey'. 'true' branch is taken"
+                        }
+                      },
+                      "kinds": [
+                        "Branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8707,
+                            "startColumn": 46
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C33010",
+          "message": {
+            "text": "Unchecked lower bound for enum source used as index.."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 9662,
+                  "startColumn": 5,
+                  "endLine": 9662,
+                  "endColumn": 37
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GetInputSourceName",
+                  "decoratedName": "?GetInputSourceName@@YAPEBDW4ImGuiInputSource@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9658,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9660,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9660,
+                            "startColumn": 40
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9661,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition '1'. 'true' branch is taken"
+                        }
+                      },
+                      "kinds": [
+                        "Branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9661,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition '0 <= source'. 'false' branch is taken\nEnum value 'source' is checked for upper bound."
+                        }
+                      },
+                      "kinds": [
+                        "Combination"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9661,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9661,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition '0'. 'false' branch is taken"
+                        }
+                      },
+                      "kinds": [
+                        "Branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9661,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9661,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9662,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C33010",
+          "message": {
+            "text": "Unchecked lower bound for enum source used as index.."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 9668,
+                  "startColumn": 5,
+                  "endLine": 9668,
+                  "endColumn": 37
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GetMouseSourceName",
+                  "decoratedName": "?GetMouseSourceName@@YAPEBDW4ImGuiMouseSource@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9664,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9666,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9666,
+                            "startColumn": 40
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9667,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition '1'. 'true' branch is taken"
+                        }
+                      },
+                      "kinds": [
+                        "Branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9667,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition '0 <= source'. 'false' branch is taken\nEnum value 'source' is checked for upper bound."
+                        }
+                      },
+                      "kinds": [
+                        "Combination"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9667,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9667,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition '0'. 'false' branch is taken"
+                        }
+                      },
+                      "kinds": [
+                        "Branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9667,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9667,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9668,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Dereferencing NULL pointer 'window->Viewport'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 14877,
+                  "startColumn": 13,
+                  "endLine": 14877,
+                  "endColumn": 74
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::WindowSelectViewport",
+                  "decoratedName": "?WindowSelectViewport@ImGui@@YAXPEAUImGuiWindow@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14752,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14753,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14754,
+                            "startColumn": 48
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14757,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14758,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14763,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14766,
+                            "startColumn": 71
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14772,
+                            "startColumn": 73
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14787,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14788,
+                            "startColumn": 32
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14800,
+                            "startColumn": 53
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14807,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14812,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14816,
+                            "startColumn": 44
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14820,
+                            "startColumn": 77
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14830,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "'window->Viewport' may be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14831,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14836,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'window->Viewport==0')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14837,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14841,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume '!lock_viewport')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14843,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'flags' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14855,
+                            "startColumn": 144
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14873,
+                            "startColumn": 65
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume '<branch condition>')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14877,
+                            "startColumn": 56
+                          }
+                        },
+                        "message": {
+                          "text": "'window->Viewport' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Dereferencing NULL pointer 'window'. See line 14753 for an earlier location where this can occur"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 14882,
+                  "startColumn": 5,
+                  "endLine": 14882,
+                  "endColumn": 56
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::WindowSelectViewport",
+                  "decoratedName": "?WindowSelectViewport@ImGui@@YAXPEAUImGuiWindow@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14752,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14753,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14754,
+                            "startColumn": 48
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14757,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14758,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14763,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14766,
+                            "startColumn": 71
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14772,
+                            "startColumn": 73
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14787,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14788,
+                            "startColumn": 32
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14800,
+                            "startColumn": 53
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14807,
+                            "startColumn": 31
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14812,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'flags' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14816,
+                            "startColumn": 44
+                          }
+                        },
+                        "message": {
+                          "text": "'window' is an In/Out argument to 'ImGui::GetWindowAlwaysWantOwnViewport' (declared on line 1141)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14816,
+                            "startColumn": 44
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14820,
+                            "startColumn": 77
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14830,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14831,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14836,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'window->Viewport==0')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14837,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "'window' is an In/Out argument to 'ImGui::UpdateTryMergeWindowIntoHostViewport' (declared on line 1139)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14837,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume '<branch condition>')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14838,
+                            "startColumn": 30
+                          }
+                        },
+                        "message": {
+                          "text": "'window' is an In/Out argument to 'ImGui::AddUpdateViewport' (declared on line 1133)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14841,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume '!lock_viewport')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14843,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'flags' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14855,
+                            "startColumn": 144
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14873,
+                            "startColumn": 65
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume '<branch condition>')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14877,
+                            "startColumn": 56
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14882,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "'window' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Dereferencing NULL pointer 'node'. See line 15862 for an earlier location where this can occur"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 15951,
+                  "startColumn": 9,
+                  "endLine": 15951,
+                  "endColumn": 40
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::DockContextProcessDock",
+                  "decoratedName": "?DockContextProcessDock@ImGui@@YAXPEAUImGuiContext@@PEAUImGuiDockRequest@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15824,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15825,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15827,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15828,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15830,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15831,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15832,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15833,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15836,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15839,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15840,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15841,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15853,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15855,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15859,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15861,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15862,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15863,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15864,
+                            "startColumn": 43
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15872,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15873,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15884,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15886,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "'node' may be NULL (Skip this branch)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15951,
+                            "startColumn": 38
+                          }
+                        },
+                        "message": {
+                          "text": "'node' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Dereferencing NULL pointer 'node->TabBar'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 16182,
+                  "startColumn": 13,
+                  "endLine": 16182,
+                  "endColumn": 81
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::DockNodeAddWindow",
+                  "decoratedName": "?DockNodeAddWindow@ImGui@@YAXPEAUImGuiDockNode@@PEAUImGuiWindow@@_N@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16141,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16141,
+                            "startColumn": 38
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16142,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16148,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16149,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16154,
+                            "startColumn": 61
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16157,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16158,
+                            "startColumn": 34
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16159,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16160,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16161,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16162,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16166,
+                            "startColumn": 34
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16177,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16179,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "'node->TabBar' may be NULL (Enter this branch)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16181,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16182,
+                            "startColumn": 41
+                          }
+                        },
+                        "message": {
+                          "text": "'node->TabBar' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C28182",
+          "message": {
+            "text": "Dereferencing NULL pointer. 'node' contains the same NULL value as 'info->CentralNode' did. See line 16355 for an earlier location where this can occur"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 16369,
+                  "startColumn": 9,
+                  "endLine": 16369,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DockNodeFindInfo",
+                  "decoratedName": "?DockNodeFindInfo@@YAXPEAUImGuiDockNode@@PEAUImGuiDockNodeTreeInfo@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16355,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16361,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16363,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16364,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16365,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16367,
+                            "startColumn": 41
+                          }
+                        },
+                        "message": {
+                          "text": "'node' may be NULL (Skip this branch)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16369,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'node->ChildNodes[0]' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16369,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "'node' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Dereferencing NULL pointer 'merge_lead_child'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 17714,
+                  "startColumn": 5,
+                  "endLine": 17714,
+                  "endColumn": 50
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::DockNodeTreeMerge",
+                  "decoratedName": "?DockNodeTreeMerge@ImGui@@YAXPEAUImGuiContext@@PEAUImGuiDockNode@@1@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17688,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17689,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17690,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17691,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17692,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "'merge_lead_child' may be NULL (Enter this loop)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17693,
+                            "startColumn": 48
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17698,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17700,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17701,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "'merge_lead_child' is an In/Out argument to 'ImGui::DockNodeMoveChildNodes' (declared on line 15367)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17702,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'child_0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17707,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'child_1')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17709,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17710,
+                            "startColumn": 41
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17712,
+                            "startColumn": 34
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17713,
+                            "startColumn": 34
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17714,
+                            "startColumn": 32
+                          }
+                        },
+                        "message": {
+                          "text": "'merge_lead_child' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Dereferencing NULL pointer 'node'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 18735,
+                  "startColumn": 9,
+                  "endLine": 18735,
+                  "endColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::BeginDocked",
+                  "decoratedName": "?BeginDocked@ImGui@@YAXPEAUImGuiWindow@@PEA_N@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18686,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18689,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18691,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18692,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18703,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18704,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18705,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18706,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18714,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18715,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "'node' may be NULL (Skip this branch)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18717,
+                            "startColumn": 29
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'window->DockId!=0&&node==0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18735,
+                            "startColumn": 30
+                          }
+                        },
+                        "message": {
+                          "text": "'node' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C28182",
+          "message": {
+            "text": "Dereferencing NULL pointer. 'window->DockNode' contains the same NULL value as 'node' did. See line 18735 for an earlier location where this can occur"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 18807,
+                  "startColumn": 18,
+                  "endLine": 18807,
+                  "endColumn": 50
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::BeginDocked",
+                  "decoratedName": "?BeginDocked@ImGui@@YAXPEAUImGuiWindow@@PEA_N@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18686,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18689,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18691,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18692,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18703,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18704,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18705,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18706,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18714,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18715,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "'node' may be NULL (Skip this branch)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18717,
+                            "startColumn": 29
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'window->DockId!=0&&node==0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18735,
+                            "startColumn": 30
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18747,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18747,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18748,
+                            "startColumn": 43
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18747,
+                            "startColumn": 75
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18747,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18748,
+                            "startColumn": 43
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18747,
+                            "startColumn": 75
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18747,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18753,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'node->HostWindow==0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18763,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume '!!((node->HostWindow))')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18764,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume '!!((node->IsLeafNode()))')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18765,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume '<branch condition>')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18766,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18769,
+                            "startColumn": 65
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18776,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18777,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18778,
+                            "startColumn": 32
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18779,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18780,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18781,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18782,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'node->MergedFlags' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18786,
+                            "startColumn": 29
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'node->VisibleWindow==window' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18790,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume '<branch condition>')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18791,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18792,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18793,
+                            "startColumn": 32
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18796,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18800,
+                            "startColumn": 22
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18803,
+                            "startColumn": 71
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18807,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "'node' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C33010",
+          "message": {
+            "text": "Unchecked lower bound for enum key used as index.."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 19985,
+                  "startColumn": 95,
+                  "endLine": 19985,
+                  "endColumn": 119
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::ShowMetricsWindow::funcs::IsLegacyNativeDupe",
+                  "decoratedName": "?IsLegacyNativeDupe@funcs@?MD@??ShowMetricsWindow@ImGui@@YAXPEA_N@Z@SA_NW4ImGuiKey@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 19985,
+                            "startColumn": 40
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 19985,
+                            "startColumn": 86
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition 'key < 512'. 'true' branch is taken\nEnum value 'key' is checked for upper bound."
+                        }
+                      },
+                      "kinds": [
+                        "Combination"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 19985,
+                            "startColumn": 95
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 19985,
+                            "startColumn": 115
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.38.33130.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/dev/Spark/SparkEngine/vendor/imgui/imgui.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "defbcac1d33f96f7db2876083f5a14acbb622aebee191b358d368b5421a765c4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/dev/spark/sparkengine/vendor/imgui/imgui.h"
+          },
+          "hashes": {
+            "sha-256": "a4a666c80d9e289ee5c98d588a7d40f6744a8c86f2606ad954eaff707ecbd2fe"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/dev/spark/sparkengine/vendor/imgui/imconfig.h"
+          },
+          "hashes": {
+            "sha-256": "07428116edfc8ac1a32ca64ab0f4c04ce831f4b4f7e4b95531d7306dcc4d2323"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/dev/spark/sparkengine/vendor/imgui/imgui_internal.h"
+          },
+          "hashes": {
+            "sha-256": "295a21ac29f5bbfd3b2423cfa0fcf6907e47d24d750074ceb186640bd5c60b0f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/dev/spark/sparkengine/vendor/imgui/imstb_textedit.h"
+          },
+          "hashes": {
+            "sha-256": "7ddff4ecb710e321b8f966417a6dc72f3e2242165f68cc78c5275b5653224bba"
+          }
+        }
+      ]
+    }
+  ]
+}
